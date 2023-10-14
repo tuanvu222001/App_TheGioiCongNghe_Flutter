@@ -13,7 +13,7 @@ class DetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: product.bgColor,
+      backgroundColor: product.color,
       appBar: AppBar(
         leading: const BackButton(color: Colors.black),
         actions: [
@@ -69,12 +69,12 @@ class DetailsScreen extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: defaultPadding),
                     child: Text(
-                      "A Henley shirt is a collarless pullover shirt, by a round neckline and a placket about 3 to 5 inches (8 to 13 cm) long and usually having 2–5 buttons.",
+                      "Iphone 15prm",
                     ),
                   ),
                   Text(
                     "Colors",
-                    style: Theme.of(context).textTheme.subtitle2,
+                    style: Theme.of(context).textTheme.titleSmall,
                   ),
                   const SizedBox(height: defaultPadding / 2),
                   Row(
@@ -101,9 +101,9 @@ class DetailsScreen extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                            primary: primaryColor,
+                            backgroundColor: primaryColor,
                             shape: const StadiumBorder()),
-                        child: const Text("Add to Cart"),
+                        child: const Text("Thêm sản phẩm"),
                       ),
                     ),
                   )
